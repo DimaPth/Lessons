@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+2
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.hero {
+    height: 100vh;
+    background: #EEEFF1;
+}
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 55px;
+    height: 115px;
+}
+.container {
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+.logo-container {
+    height: 60px;
+    width: 96px;
+    
+    float: left;
+}
+.logo-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.menu {
+    float: right;
+}
+header nav li {
+    display: inline-block;
+    margin-right: 22px;
+}
+header nav li a {
+    text-decoration: none;
+    line-height: 60px;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding: 0 10px;
+}
+
+header nav li a:hover {
+    opacity: 0.6;
+    color: #34547A;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.hero {
+    padding-top: 115px;
+}
+.hero .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-img {
+    display: inline-block;
+    margin-left: 80px;
+}
+.content {
+    float: right;
+    width: 540px;
+}
+.content h1 {
+    margin-top: -30px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+}
+.content p {
+    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    font-weight: 400;
+}
+.content a {
+    padding: 25px 41px;
+    background-color: rgba(52, 84, 122, 1);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em; 
+}
+.content::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.about-me {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.about-me__content h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+.about-me__content p {
+    width: 540px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.projects {
+    background: #34547A;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.projects .project, .project-img, .project-content {
+    display: inline-block;
+}
+.project {
+    margin-right: 40px;
+    color: #fff;
+    padding: 100px 0;
+}
+.project h3 {
+    margin: 0 25px 5px 0;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+.project p{
+    margin: 0 0 0 10px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+.my-skills__content, .my-skills__img {
+    display: inline-block;
+}
+.my-skills__img{
+    float: right;
+}
+.my-skills__content{
+    transform: translateY(25%);
+}
+.my-skills__content h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+.my-skills__content p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #727272;
+}
+.my-skills__content progress {
+    width: 445px;
+}
+.my-skills::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.my-work {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #EEEFF1;
+    padding-bottom: 100px;
+}
+.my-work__content {
+    width: 540px;
+    padding-top: 100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.my-work__content h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+.my-work__content p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.my-work__video img {
+    position: absolute;
+    transform: translate(-600%, 250%);
+    z-index: 2;
+}
+.my-work__video img:hover {
+    cursor: pointer;
+}
+.photos{
+    font-size: 0;
+}
+.photos__wrap {
+    text-align: center;
+    white-space: nowrap;
+}
+.photos__img {
+    display: inline-block;
+    position: relative;
+}
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+}
+.project-overlay:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s; 
+}
