@@ -309,9 +309,18 @@ footer {
     display: inline-block;
     padding: 50px 0;
 }
+.footer-content h3 {
+    font-weight: 500;
+    font-size: 21px;
+    color: #fff;
+}
+.footer-content p {
+    font-size: 13px;
+    color: #fff;
+}
 .footer-img {
     float: right;
-    transform: translateY(275%);
+    transform: translateY(300%);
 }
 .footer-img img {
     margin-right: 21px;
